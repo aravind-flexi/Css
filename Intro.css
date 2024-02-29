@@ -1,0 +1,14 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  text-align: left;
+  margin-left: 20px;
+}
+
+p {
+  font-family: Timesnewroman;
+  font-size: 30px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one {border-style: dotted;border-width:thin;border-color:red;}
+p.two {border-style: dashed;border-width:medium;border-color:red green blue yellow;}
+p.three {border-style: solid;border-width:thick;border-color:#ff00ff}
+p.four {border-style: double;border-width:10px;border-color:rgb(50,100,150)}
+p.five {border-style: groove;border-width:5px 20px;} /*5px top&bottom 20px on the sides*/
+p.six {border-style: ridge;border-width:10px 5px 10px 5px;border-color:hsl(0,75%,50%);}
+p.seven {border-style: inset;}
+p.eight {border-style: outset;}
+p.nine {border-style: none;}
+p.ten {border-style: hidden;}
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+p.eleven {border-style: dotted dashed solid double;}
+p.twelve {border-style:dotted dashed double}
+p.thirteen {border-style:groove double}
+p.fourteen {border-style:inset; border-bottom:none}
+p.fifteen {border:10px solid red;border-radius:10px}
+p.sixteen {border-left:10px solid green;border-bottom:5px solid yellow;}
+</style>
+</head>
+
+<body>
+
+<p class="one">A dotted border.</p>
+<p class="two">A dashed border.</p>
+<p class="three">A solid border.</p>
+<p class="four">A double border.</p>
+<p class="five">A groove border.</p>
+<p class="six">A ridge border.</p>
+<p class="seven">An inset border.</p>
+<p class="eight">An outset border.</p>
+<p class="nine">No border.</p>
+<p class="ten">A hidden border.</p>
+<p>Specific borders for sides</p>
+<p class="eleven">A mixed border.</p>
+<p class="twelve">Hi</p>
+<p class="thirteen">Welcome</p>
+<p class="fourteen">How are you</p>
+<p class="fifteen">I am fine</p>
+<p class="sixteen">Hope you are good</p>
+</body>
+</html>

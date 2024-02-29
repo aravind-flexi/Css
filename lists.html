@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {
+  list-style-type: circle; background: tomato;
+  padding: 20px;
+}
+
+ul.b {
+  list-style-type: square; background: red;color: darkblue; margin: 5px;
+  padding: 20px;
+}
+
+ol.c {
+  list-style-type: upper-roman;  background:blue;color: darkred; margin-left: 10px;
+  padding: 20px;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+ul.e {
+  list-style-image: url('gif.png');
+}
+ul.f {
+  list-style-position: outside;
+}
+
+ul.g{
+  list-style-position: inside;
+}
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.short {
+  list-style: square inside url("gif.png");
+}
+ul.left {
+  border-left: 5px solid red;
+  background-color: grey;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+ul.border {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+ul.border li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+ul.border li:last-child {
+  border-bottom: none
+}
+
+ul.h {list-style-type: circle;}
+ul.i {list-style-type: disc;}
+ul.j {list-style-type: square;}
+
+ol.k {list-style-type: armenian;}
+ol.l {list-style-type: cjk-ideographic;}
+ol.m {list-style-type: decimal;}
+ol.n {list-style-type: decimal-leading-zero;}
+ol.o {list-style-type: georgian;}
+ol.p {list-style-type: hebrew;}
+ol.q {list-style-type: hiragana;}
+ol.r {list-style-type: hiragana-iroha;}
+ol.s {list-style-type: katakana;}
+ol.t {list-style-type: katakana-iroha;}
+ol.u {list-style-type: lower-alpha;}
+ol.v {list-style-type: lower-greek;}
+ol.w {list-style-type: lower-latin;}
+ol.x {list-style-type: lower-roman;}
+ol.y {list-style-type: upper-alpha;}
+ol.z {list-style-type: upper-latin;}
+ol.1 {list-style-type: upper-roman;}
+ol.2 {list-style-type: none;}
+ol.3 {list-style-type: inherit;}
+</style>
+</head>
+<body>
+
+<h2>The list-style-type Property</h2>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h2>The list-style-image Property</h2>
+
+<p>The list-style-image property specifies an image as the list item marker:</p>
+
+<ul class="e">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<h1>The list-style-position Property</h1>
+
+<h2>list-style-position: outside (default):</h2>
+<ul class="f">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<h2>list-style-position: inside:</h2>
+<ul class="g">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<p>Remove bullets, margin and padding from list:</p>
+<ul class="demo">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h2>The list-style Property</h2>
+<ul class="short">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<h2>List with a red left border</h2>
+
+<ul class="left">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h2>A bordered list</h2>
+
+<ul class="border">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<h2>All List Style Types</h2>
+
+<ul class="h">
+  <li>Circle type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="i">
+  <li>Disc type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="j">
+  <li>Square type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ol class="k">
+  <li>Armenian type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="l">
+  <li>Cjk-ideographic type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="m">
+  <li>Decimal type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="n">
+  <li>Decimal-leading-zero type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="o">
+  <li>Georgian type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="p">
+  <li>Hebrew type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="q">
+  <li>Hiragana type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="r">
+  <li>Hiragana-iroha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="s">
+  <li>Katakana type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="t">
+  <li>Katakana-iroha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="u">
+  <li>Lower-alpha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="v">
+  <li>Lower-greek type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="w">
+  <li>Lower-latin type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="x">
+  <li>Lower-roman type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="y">
+  <li>Upper-alpha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="z">
+  <li>Upper-latin type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="1">
+  <li>Upper-roman type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="2">
+  <li>None type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="3">
+  <li>inherit type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+
+
+</body>
+</html>

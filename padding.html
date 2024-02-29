@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*div {
+  padding: 50px;
+  border: 1px solid green;
+}*/
+p {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+p.four {
+  border: 1px solid red;
+  padding: 25px 50px 75px 100px;
+}
+p.three {
+  border: 1px solid green;
+  padding: 25px 50px 75px;
+}
+p.two {
+  border: 1px solid yellow;
+  padding: 25px 50px;
+}
+p.one{
+  border: 1px solid blue;
+  padding: 25px;
+}
+div.ex1 {
+  width: 300px;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  background-color: lightblue;
+}
+div.ex3 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Padding</h2>
+<div>This element has a padding of 50px.</div>
+
+<p>CSS has properties for specifying the padding for each side of an element</p>
+<p class="four">If the padding property has four values:
+
+padding: 25px 50px 75px 100px;
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px</p>
+
+<p class="three">If the padding property has three values:
+
+padding: 25px 50px 75px;
+top padding is 25px
+right and left paddings are 50px
+bottom padding is 75px</p>
+
+<p class="two">If the padding property has two values:
+
+padding: 25px 50px;
+top and bottom paddings are 25px
+right and left paddings are 50px</p>
+
+<p class="one">If the padding property has one value:
+
+padding: 25px;
+all four paddings are 25px</p>
+
+<div class="ex1">This div is 300px wide.</div>
+<br>
+
+<div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+<br>
+
+<div class="ex3">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
+</div>
+
+</body>
+</html>

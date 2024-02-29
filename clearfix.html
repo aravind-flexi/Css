@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  height:250px;
+  padding: 50px;
+  border:none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="img1" src="image.jpg" alt="tree" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+<h2 style="clear:right">With Clearfix</h2>
+<p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+<div class="clearfix">
+  <img class="img2" src="image.jpg" alt="tree" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+<br>
+<h2>Grid of images</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <img src="image.jpg" alt="Italy" style="width:100%">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <img src="linear.jpg" alt="Italy" style="width:100%">
+  <p>Some text inside the box.</p>
+
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <img src="bgimage.jpg" alt="Italy" style="width:100%">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+</body>
+</html>
+
+
