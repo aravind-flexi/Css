@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 10vw;
+}
+h2 {
+  font-size: 10vh;
+}
+h3 {
+  font-size: 10vmin;
+}
+h4 {
+  font-size: 15vmax;
+}
+
+
+
+
+
+
+
+p {
+  font-size: 16px;
+  line-height: 2em;
+}
+
+div {
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+span {
+  font-size: 0.5em;
+}
+div.ex {
+  font-size: 30px;
+  border: 1px solid black;
+}
+span.ex {
+  font-size: 1.5ex;
+  border:1ch solid blue;
+}
+div.rem {
+  font-size: 2rem;
+  border: 1px solid black;
+}
+div.cent {
+ font-size:16px;
+}
+
+p.cent {
+  font-size: 150%;
+  border: 2px solid black;
+}
+
+</style>
+</head>
+<body>
+<h1>Hello</h1>
+<p>Resize the width of the browser window to see how the font-size of h1 changes.</p>
+<p>1vw = 1% of viewport width.</p>
+<br>
+<h2>Hello</h2>
+<p>Resize the height of the browser window to see how the font-size of h1 changes.</p>
+<p>1vh = 1% of viewport height.</p>
+<br>
+<h3>Hello</h3>
+<p>Resize the browser window (both width and height) to see how the font-size of h1 changes.</p>
+<p>1vmin = 1vw or 1vh, whichever is smaller.</p>
+<br>
+<h4>Hello</h4>
+<p>Resize the browser window (both width and height) to see how the font-size of h1 changes.</p>
+<p>1vmax = 1vw or 1vh, whichever is larger.</p>
+<br>
+<div class="cent">The font-size of this document is 16px.</div>
+
+<p class="cent">The font-size of this div element is 150%.</p>
+
+<p>The % unit sets the font-size relative to the current font-size.</p>
+<br>
+<p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+<p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+<p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+<div>The font-size of the div element is set to 30px. <span>The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.</div>
+<br>
+<div class="ex">The font-size of the div element is set to 30px. <span class="ex">The span element inside the div element has a font-size of 1ex</span>.</div>
+<br>
+<div>The font-size of this div element is 2rem.</div>
+<p>The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents.</p>
+</body>
+</html>
